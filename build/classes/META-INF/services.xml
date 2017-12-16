@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.6  Built on : Jul 30, 2017 (09:08:31 BST) -->
+<serviceGroup>
+    <service name="CalculateurAireService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.example.CalculateurAireServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.example.CalculateurAireServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getAireRectangle" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://example.com">
+            <actionMapping>urn:getAireRectangle</actionMapping>
+            <outputActionMapping>urn:getAireRectangleResponse</outputActionMapping>
+        </operation>
+        <operation name="getAireCarre" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://example.com">
+            <actionMapping>urn:getAireCarre</actionMapping>
+            <outputActionMapping>urn:getAireCarreResponse</outputActionMapping>
+        </operation>
+        <operation name="getAireTriangle" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://example.com">
+            <actionMapping>urn:getAireTriangle</actionMapping>
+            <outputActionMapping>urn:getAireTriangleResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

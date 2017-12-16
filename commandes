@@ -1,0 +1,20 @@
+# set up
+set AXIS2_HOME=axis2
+
+# creer notre service en code java classique "com.example.CalculateurAireService" en eclipse
+
+# generer le fichier wsdl depuis notre class java
+.\axis2\bin\java2wsdl.bat -cp bin -cn com.example.CalculateurAireService -of CalculateurAireService.wsdl
+# generer le code de serveur, du client et les fichier definition de serveur axis2
+.\axis2\bin\wsdl2java.bat -uri CalculateurAireService.wsdl -d adb -ss -ssi -sd -o .
+# refresh le projet eclipse
+# ajouter les jars en axis2\lib dans Java Build Path
+# implementer le code serveur en changeant com.example.CalculateurAireServiceSkeleton
+# implementer l'interface graphique com.example.CalculateurAire
+# integrer l'interface graphique avec le code client du com.example.CalculateurAireServiceStub
+# BONUS: simplifier le code com.example.CalculateurAire en extrait le code
+# interagtion client en com.example.CalculateurAireClient
+
+# run server
+set AXIS2_HOME=axis2
+.\ant\bin\ant.bat start.server
